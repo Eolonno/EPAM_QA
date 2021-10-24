@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "7kj6hvYI4l9kJRsltjP8A8YPWa3zt1532d6XBwxov390pM9aLPZCVEQLPwRFGodB1PxdVrbDNA1kdLyFROX+hA==",
+  "dgSpecHash": "UNA8GnqVm3+CkDqnPln/vaxR+8AciTgZqs5vAQNmkdBEUbT/S1Rw9lfPXMX2vxYf/5nNKjuNsEyQn8J0POnABQ==",
   "success": true,
   "projectFilePath": "D:\\EPAM_QA\\Calculator\\CalculatorClassLibraryTests\\CalculatorClassLibrary.Tests.csproj",
   "expectedPackageFiles": [
