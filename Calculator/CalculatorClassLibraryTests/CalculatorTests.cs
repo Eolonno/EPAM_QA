@@ -35,7 +35,7 @@ namespace CalculatorClassLibrary.Tests
         [Fact]
         public void ItShould_substractMinus5_andMinus5_returns0() => Assert.Equal(0, Calculator.Substract(-5, -5));
 
-        MULTIPLY TESTS
+        //MULTIPLY TESTS
        [Fact]
         public void ItShould_multiply0_and10_returns0() => Assert.Equal(0, Calculator.Multiply(0, 10));
 
