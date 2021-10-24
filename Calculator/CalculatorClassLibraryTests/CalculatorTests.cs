@@ -9,9 +9,9 @@ namespace CalculatorClassLibrary.Tests
         [Fact]
         public void ItShould_sum10_and5_returns15() => Assert.Equal(15, Calculator.Sum(10, 5));
 
-        //[Fact]
-        //public void ItShould_sumSizeOfInt_and1_throwsException() => Assert.Throws<Exception>(
-        //    () => Calculator.Sum(int.MaxValue, int.MaxValue));
+        [Fact]
+        public void ItShould_sumSizeOfInt_and1_throwsException() => Assert.Throws<Exception>(
+            () => Calculator.Sum(int.MaxValue, int.MaxValue));
 
         [Fact]
         public void ItShould_sumMinus10_and10_returns0() => Assert.Equal(0, Calculator.Sum(-10, 10));
