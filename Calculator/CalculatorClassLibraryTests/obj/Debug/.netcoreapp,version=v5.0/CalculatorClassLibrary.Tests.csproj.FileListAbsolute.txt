@@ -104,3 +104,6 @@ D:\EPAM_QA\Calculator\CalculatorClassLibraryTests\obj\Debug\.netcoreapp,version=
 D:\EPAM_QA\Calculator\CalculatorClassLibraryTests\obj\Debug\.netcoreapp,version=v5.0\ref\CalculatorClassLibrary.Tests.dll
 D:\EPAM_QA\Calculator\CalculatorClassLibraryTests\obj\Debug\.netcoreapp,version=v5.0\CalculatorClassLibrary.Tests.pdb
 D:\EPAM_QA\Calculator\CalculatorClassLibraryTests\obj\Debug\.netcoreapp,version=v5.0\CalculatorClassLibrary.Tests.genruntimeconfig.cache
+D:\EPAM_QA\Calculator\CalculatorClassLibraryTests\bin\Debug\.netcoreapp,version=v5.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+D:\EPAM_QA\Calculator\CalculatorClassLibraryTests\bin\Debug\.netcoreapp,version=v5.0\xunit.runner.reporters.netcoreapp10.dll
+D:\EPAM_QA\Calculator\CalculatorClassLibraryTests\bin\Debug\.netcoreapp,version=v5.0\xunit.runner.utility.netcoreapp10.dll
