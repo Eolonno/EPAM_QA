@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "+JJxNZADFn6RRXB9Z4v/Hlhzt+0MQ31nY1LgB0Bes5qwEqtoiatooPqi745Upnff6+st+4U8gxFzCdk9hFjYrQ==",
+  "dgSpecHash": "z2J+cXyOpqjfMi8c3lL2UUCyV8Het+VGIzQYPyg6WxLj/DIZX9v0mNtjEF+cp9/bbgYf7xbqtRczOSprH7VwZg==",
   "success": true,
   "projectFilePath": "D:\\EPAM_QA\\Calculator\\CalculatorClassLibraryTests\\CalculatorClassLibrary.Tests.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\yegor\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
+    "C:\\Users\\yegor\\.nuget\\packages\\coverlet.collector\\3.1.0\\coverlet.collector.3.1.0.nupkg.sha512",
     "C:\\Users\\yegor\\.nuget\\packages\\microsoft.codecoverage\\16.9.4\\microsoft.codecoverage.16.9.4.nupkg.sha512",
     "C:\\Users\\yegor\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
     "C:\\Users\\yegor\\.nuget\\packages\\microsoft.net.test.sdk\\16.9.4\\microsoft.net.test.sdk.16.9.4.nupkg.sha512",
