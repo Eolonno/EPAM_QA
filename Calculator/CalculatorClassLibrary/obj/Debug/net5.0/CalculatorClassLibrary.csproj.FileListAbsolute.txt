@@ -1,0 +1,12 @@
+D:\EPAM_QA\Calculator\CalculatorClassLibrary\bin\Debug\net5.0\CalculatorClassLibrary.deps.json
+D:\EPAM_QA\Calculator\CalculatorClassLibrary\bin\Debug\net5.0\CalculatorClassLibrary.dll
+D:\EPAM_QA\Calculator\CalculatorClassLibrary\bin\Debug\net5.0\ref\CalculatorClassLibrary.dll
+D:\EPAM_QA\Calculator\CalculatorClassLibrary\bin\Debug\net5.0\CalculatorClassLibrary.pdb
+D:\EPAM_QA\Calculator\CalculatorClassLibrary\obj\Debug\net5.0\CalculatorClassLibrary.csproj.AssemblyReference.cache
+D:\EPAM_QA\Calculator\CalculatorClassLibrary\obj\Debug\net5.0\CalculatorClassLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\EPAM_QA\Calculator\CalculatorClassLibrary\obj\Debug\net5.0\CalculatorClassLibrary.AssemblyInfoInputs.cache
+D:\EPAM_QA\Calculator\CalculatorClassLibrary\obj\Debug\net5.0\CalculatorClassLibrary.AssemblyInfo.cs
+D:\EPAM_QA\Calculator\CalculatorClassLibrary\obj\Debug\net5.0\CalculatorClassLibrary.csproj.CoreCompileInputs.cache
+D:\EPAM_QA\Calculator\CalculatorClassLibrary\obj\Debug\net5.0\CalculatorClassLibrary.dll
+D:\EPAM_QA\Calculator\CalculatorClassLibrary\obj\Debug\net5.0\ref\CalculatorClassLibrary.dll
+D:\EPAM_QA\Calculator\CalculatorClassLibrary\obj\Debug\net5.0\CalculatorClassLibrary.pdb
