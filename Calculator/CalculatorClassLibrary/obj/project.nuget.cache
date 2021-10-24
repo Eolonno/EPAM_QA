@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "isOVy3uahBaGbruVad7W/Rm4ihLIByPxpsmfFuPyBGpbJXBJhTKphcdgqXYxPgByfmap89GDQ6cLRQSnlF9APQ==",
+  "dgSpecHash": "qqr5yLTMR24S2SX2pDtr8KGJVx+kaoaZvb2QbXtGnnO+xhRWohodjcfuHVunA0YPQ2DEaBnT6r9oPlrfXaMt1A==",
   "success": true,
   "projectFilePath": "D:\\EPAM_QA\\Calculator\\CalculatorClassLibrary\\CalculatorClassLibrary.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\yegor\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.3\\xunit.runner.visualstudio.2.4.3.nupkg.sha512"
+    "C:\\Users\\yegor\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.3\\xunit.runner.visualstudio.2.4.3.nupkg.sha512",
+    "C:\\Users\\yegor\\.nuget\\packages\\xunitxml.testlogger\\3.0.66\\xunitxml.testlogger.3.0.66.nupkg.sha512"
   ],
   "logs": []
 }

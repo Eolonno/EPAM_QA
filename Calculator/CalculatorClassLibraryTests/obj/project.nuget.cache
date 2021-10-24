@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "UNA8GnqVm3+CkDqnPln/vaxR+8AciTgZqs5vAQNmkdBEUbT/S1Rw9lfPXMX2vxYf/5nNKjuNsEyQn8J0POnABQ==",
+  "dgSpecHash": "+JJxNZADFn6RRXB9Z4v/Hlhzt+0MQ31nY1LgB0Bes5qwEqtoiatooPqi745Upnff6+st+4U8gxFzCdk9hFjYrQ==",
   "success": true,
   "projectFilePath": "D:\\EPAM_QA\\Calculator\\CalculatorClassLibraryTests\\CalculatorClassLibrary.Tests.csproj",
   "expectedPackageFiles": [
@@ -99,7 +99,8 @@
     "C:\\Users\\yegor\\.nuget\\packages\\xunit.core\\2.4.1\\xunit.core.2.4.1.nupkg.sha512",
     "C:\\Users\\yegor\\.nuget\\packages\\xunit.extensibility.core\\2.4.1\\xunit.extensibility.core.2.4.1.nupkg.sha512",
     "C:\\Users\\yegor\\.nuget\\packages\\xunit.extensibility.execution\\2.4.1\\xunit.extensibility.execution.2.4.1.nupkg.sha512",
-    "C:\\Users\\yegor\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.3\\xunit.runner.visualstudio.2.4.3.nupkg.sha512"
+    "C:\\Users\\yegor\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.3\\xunit.runner.visualstudio.2.4.3.nupkg.sha512",
+    "C:\\Users\\yegor\\.nuget\\packages\\xunitxml.testlogger\\3.0.66\\xunitxml.testlogger.3.0.66.nupkg.sha512"
   ],
   "logs": []
 }

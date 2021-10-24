@@ -1740,9 +1740,18 @@
           "build/netcoreapp2.1/xunit.runner.visualstudio.props": {}
         }
       },
+      "XunitXml.TestLogger/3.0.66": {
+        "type": "package",
+        "build": {
+          "build/netstandard1.5/XunitXml.TestLogger.props": {}
+        }
+      },
       "CalculatorClassLibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "XunitXml.TestLogger": "3.0.66"
+        },
         "compile": {
           "bin/placeholder/CalculatorClassLibrary.dll": {}
         },
@@ -6328,6 +6337,23 @@
         "xunit.runner.visualstudio.nuspec"
       ]
     },
+    "XunitXml.TestLogger/3.0.66": {
+      "sha512": "wHxmzqPw3OuBAyyTN7qwlskrLuitl1+lP0MhuLFQtw56qZ5oKnQsemzdGe9ti8VLNxWzXh56EgsTgnVmdlZzeg==",
+      "type": "package",
+      "path": "xunitxml.testlogger/3.0.66",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/_common/Microsoft.VisualStudio.TestPlatform.Extension.Xunit.Xml.TestAdapter.dll",
+        "build/_common/Microsoft.VisualStudio.TestPlatform.Extension.Xunit.Xml.TestLogger.dll",
+        "build/_common/Spekt.TestLogger.dll",
+        "build/net46/XunitXml.TestLogger.props",
+        "build/netstandard1.5/XunitXml.TestLogger.props",
+        "packageIcon.png",
+        "xunitxml.testlogger.3.0.66.nupkg.sha512",
+        "xunitxml.testlogger.nuspec"
+      ]
+    },
     "CalculatorClassLibrary/1.0.0": {
       "type": "project",
       "path": "../CalculatorClassLibrary/CalculatorClassLibrary.csproj",
@@ -6340,6 +6366,7 @@
       "MSTest.TestAdapter >= 2.2.3",
       "MSTest.TestFramework >= 2.2.3",
       "Microsoft.NET.Test.Sdk >= 16.9.4",
+      "XunitXml.TestLogger >= 3.0.66",
       "coverlet.collector >= 3.0.2",
       "xunit >= 2.4.1",
       "xunit.runner.visualstudio >= 2.4.3"
@@ -6399,6 +6426,10 @@
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
             "version": "[16.9.4, )"
+          },
+          "XunitXml.TestLogger": {
+            "target": "Package",
+            "version": "[3.0.66, )"
           },
           "coverlet.collector": {
             "target": "Package",

@@ -7,6 +7,12 @@
         "build": {
           "build/netcoreapp2.1/xunit.runner.visualstudio.props": {}
         }
+      },
+      "XunitXml.TestLogger/3.0.66": {
+        "type": "package",
+        "build": {
+          "build/netstandard1.5/XunitXml.TestLogger.props": {}
+        }
       }
     }
   },
@@ -41,10 +47,28 @@
         "xunit.runner.visualstudio.2.4.3.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "XunitXml.TestLogger/3.0.66": {
+      "sha512": "wHxmzqPw3OuBAyyTN7qwlskrLuitl1+lP0MhuLFQtw56qZ5oKnQsemzdGe9ti8VLNxWzXh56EgsTgnVmdlZzeg==",
+      "type": "package",
+      "path": "xunitxml.testlogger/3.0.66",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/_common/Microsoft.VisualStudio.TestPlatform.Extension.Xunit.Xml.TestAdapter.dll",
+        "build/_common/Microsoft.VisualStudio.TestPlatform.Extension.Xunit.Xml.TestLogger.dll",
+        "build/_common/Spekt.TestLogger.dll",
+        "build/net46/XunitXml.TestLogger.props",
+        "build/netstandard1.5/XunitXml.TestLogger.props",
+        "packageIcon.png",
+        "xunitxml.testlogger.3.0.66.nupkg.sha512",
+        "xunitxml.testlogger.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "XunitXml.TestLogger >= 3.0.66",
       "xunit.runner.visualstudio >= 2.4.3"
     ]
   },
@@ -87,6 +111,10 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
+          "XunitXml.TestLogger": {
+            "target": "Package",
+            "version": "[3.0.66, )"
+          },
           "xunit.runner.visualstudio": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
