@@ -36,21 +36,21 @@ namespace CalculatorClassLibrary.Tests
         //public void ItShould_substractMinus5_andMinus5_returns0() => Assert.Equal(0, Calculator.Substract(-5, -5));
 
         // MULTIPLY TESTS
-        [Fact]
-        public void ItShould_multiply0_and10_returns0() => Assert.Equal(0, Calculator.Multiply(0, 10));
+        //[Fact]
+        //public void ItShould_multiply0_and10_returns0() => Assert.Equal(0, Calculator.Multiply(0, 10));
 
-        [Fact]
-        public void ItShould_multiply1000_and1000_returns1000000() =>
-            Assert.Equal(1_000_000, Calculator.Multiply(1000, 1000));
+        //[Fact]
+        //public void ItShould_multiply1000_and1000_returns1000000() =>
+        //    Assert.Equal(1_000_000, Calculator.Multiply(1000, 1000));
 
-        [Fact]
-        public void ItShould_sumAllNumbersBetween0_and10000()
-        {
-            for (int i = 0; i < 10000; i++)
-            {
-                for(int j = 0; j < 10000; j++)
-                    Assert.Equal(j+i, Calculator.Sum(j, i));
-            }
-        }
+        //[Fact]
+        //public void ItShould_sumAllNumbersBetween0_and10000()
+        //{
+        //    for (int i = 0; i < 10000; i++)
+        //    {
+        //        for(int j = 0; j < 10000; j++)
+        //            Assert.Equal(j+i, Calculator.Sum(j, i));
+        //    }
+        //}
     }
 }
