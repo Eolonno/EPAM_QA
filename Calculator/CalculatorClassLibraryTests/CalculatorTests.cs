@@ -7,7 +7,13 @@ namespace CalculatorClassLibrary.Tests
     {
         // SUM TESTS
         [Fact]
-        public void ItShould_sum10_and5_returns15() => Assert.Equal(15, Calculator.Sum(10, 5));
+        public void ItShould_sumAllNumbersBetweenMinus500_and500()
+        {
+            foreach (var dataProvider in DataProvider.GetDataProvider("Sum.txt"))
+            {
+                Assert.Equal(dataProvider.expected, Calculator.Sum(dataProvider.a, dataProvider.b));
+            }
+        }
 
         [Fact]
         public void ItShould_sumSizeOfInt_and1_throwsException() => Assert.Throws<Exception>(
@@ -19,7 +25,13 @@ namespace CalculatorClassLibrary.Tests
 
         // DIVIDE TESTS
         [Fact]
-        public void ItShould_divide100_by10_returns10() => Assert.Equal(10, Calculator.Divide(100, 10));
+        public void ItShould_divideAllNumbersBetweenMinus500_and500()
+        {
+            foreach (var dataProvider in DataProvider.GetDataProvider("Divide.txt"))
+            {
+                Assert.Equal(dataProvider.expected, Calculator.Divide(dataProvider.a, dataProvider.b));
+            }
+        }
 
         [Fact]
         public void ItShould_divide1_by0_throwsDivideByZeroException() =>
@@ -33,23 +45,24 @@ namespace CalculatorClassLibrary.Tests
         public void ItShould_substract0_and5_returnsMinus5() => Assert.Equal(-5, Calculator.Substract(0, 5));
 
         [Fact]
-        public void ItShould_substractMinus5_andMinus5_returns0() => Assert.Equal(0, Calculator.Substract(-5, -5));
+        public void ItShould_substractAllNumbersBetweenMinus500_and500()
+        {
+            foreach (var dataProvider in DataProvider.GetDataProvider("Substract.txt"))
+            {
+                Assert.Equal(dataProvider.expected, Calculator.Substract(dataProvider.a, dataProvider.b));
+            }
+        }
 
         //MULTIPLY TESTS
-       [Fact]
+        [Fact]
         public void ItShould_multiply0_and10_returns0() => Assert.Equal(0, Calculator.Multiply(0, 10));
 
         [Fact]
-        public void ItShould_multiply1000_and1000_returns1000000() =>
-            Assert.Equal(1_000_000, Calculator.Multiply(1000, 1000));
-
-        [Fact]
-        public void ItShould_sumAllNumbersBetween0_and10000()
+        public void ItShould_multiplyAllNumbersBetweenMinus500_and500()
         {
-            for (int i = 0; i < 10000; i++)
+            foreach (var dataProvider in DataProvider.GetDataProvider("Sum.txt"))
             {
-                for (int j = 0; j < 10000; j++)
-                    Assert.Equal(j + i, Calculator.Sum(j, i));
+                Assert.Equal(dataProvider.expected, Calculator.Sum(dataProvider.a, dataProvider.b));
             }
         }
     }
