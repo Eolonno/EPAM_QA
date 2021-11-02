@@ -6,64 +6,63 @@ namespace CalculatorClassLibrary.Tests
     public class CalculatorTests
     {
         // SUM TESTS
-        [Fact]
-        public void ItShould_sumAllNumbersBetweenMinus500_and500()
+        [Theory]
+        [InlineData(1, 2, 3)]
+        [InlineData(-4, -6, -10)]
+        [InlineData(-2, 2, 0)]
+        [InlineData(int.MinValue, -1, int.MaxValue)]
+        public void Sum_ValidNumbers_ReturnsExpected(int value1, int value2, int expected)
         {
-            foreach (var dataProvider in DataProvider.GetDataProvider("Sum.txt"))
-            {
-                Assert.Equal(dataProvider.expected, Calculator.Sum(dataProvider.a, dataProvider.b));
-            }
+            var result = Calculator.Sum(value1, value2);
+
+            Assert.Equal(expected, result);
         }
-
-        [Fact]
-        public void ItShould_sumSizeOfInt_and1_throwsException() => Assert.Throws<Exception>(
-            () => Calculator.Sum(int.MaxValue, int.MaxValue));
-
-        [Fact]
-        public void ItShould_sumMinus10_and10_returns0() => Assert.Equal(0, Calculator.Sum(-10, 10));
-
 
         // DIVIDE TESTS
-        [Fact]
-        public void ItShould_divideAllNumbersBetweenMinus500_and500()
+        [Theory]
+        [InlineData(55, 7, 7)]
+        [InlineData(49, 7, 7)]
+        [InlineData(-12, 7, -1)]
+        [InlineData(-84, -84, 1)]
+        public void Divide_ValidNumbers_ReturnsExpected(int value1, int value2, int expected)
         {
-            foreach (var dataProvider in DataProvider.GetDataProvider("Divide.txt"))
-            {
-                Assert.Equal(dataProvider.expected, Calculator.Divide(dataProvider.a, dataProvider.b));
-            }
+            var result = Calculator.Divide(value1, value2);
+
+            Assert.Equal(expected, result);
         }
 
         [Fact]
-        public void ItShould_divide1_by0_throwsDivideByZeroException() =>
-            Assert.Throws<DivideByZeroException>(() => Calculator.Divide(1, 0));
+        public void Divide_ByZero_ThrowsDivideByZeroException()
+        {
+            var value1 = 5;
+            var value2 = 0;
 
-        [Fact]
-        public void ItShould_divide1_byMinus1_returnsMinus1() => Assert.Equal(-1, Calculator.Divide(1, -1));
+            Assert.Throws<DivideByZeroException>(() => Calculator.Divide(value1, value2));
+        }
 
         // SUBSTRACT TESTS
-        [Fact]
-        public void ItShould_substract0_and5_returnsMinus5() => Assert.Equal(-5, Calculator.Substract(0, 5));
-
-        [Fact]
-        public void ItShould_substractAllNumbersBetweenMinus500_and500()
+        [Theory]
+        [InlineData(5, 7, -2)]
+        [InlineData(5, 5, 0)]
+        [InlineData(20, 5, 15)]
+        [InlineData(int.MinValue, 1, int.MaxValue)]
+        public void Substract_ValidNumbers_ReturnsExpected(int value1, int value2, int expected)
         {
-            foreach (var dataProvider in DataProvider.GetDataProvider("Substract.txt"))
-            {
-                Assert.Equal(dataProvider.expected, Calculator.Substract(dataProvider.a, dataProvider.b));
-            }
+            var result = Calculator.Substract(value1, value2);
+
+            Assert.Equal(expected, result);
         }
 
         //MULTIPLY TESTS
-        [Fact]
-        public void ItShould_multiply0_and10_returns0() => Assert.Equal(0, Calculator.Multiply(0, 10));
-
-        [Fact]
-        public void ItShould_multiplyAllNumbersBetweenMinus500_and500()
+        [Theory]
+        [InlineData(0, 100, 0)]
+        [InlineData(5, 5, 25)]
+        [InlineData(-2, 10, -20)]
+        public void Multiply_ValidNumbers_ReturnsExpected(int value1, int value2, int expected)
         {
-            foreach (var dataProvider in DataProvider.GetDataProvider("Sum.txt"))
-            {
-                Assert.Equal(dataProvider.expected, Calculator.Sum(dataProvider.a, dataProvider.b));
-            }
+            var result = Calculator.Multiply(value1, value2);
+
+            Assert.Equal(expected, result);
         }
     }
 }
