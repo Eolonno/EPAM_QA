@@ -8,7 +8,7 @@ namespace PocketOptions.Tests
 {
     public class Tests
     {
-        public static string RandomString(int length)
+        public static string GetRandomString(int length)
         {
             Random random = new Random();
             const string chars = "qwertyuiopasdfghjkzxcvbnm";
@@ -18,7 +18,7 @@ namespace PocketOptions.Tests
         [Fact]
         public void PocketOptions_ChangingUserName()
         {
-            var expectedName = RandomString(8);
+            var expectedName = GetRandomString(8);
             var driver = new ChromeDriver();
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
             driver.Navigate().GoToUrl("https://pocketoption.com/ru/cabinet/demo-quick-high-low/");
@@ -30,12 +30,16 @@ namespace PocketOptions.Tests
             driver.FindElement(By.CssSelector("#passwordNext > div > button")).Click();
             driver.FindElement(By.CssSelector("a[href='#sub-menu-profile-modal']")).Click();
             driver.FindElement(By.CssSelector("ul > li:nth-child(2) > a")).Click();
+
             var nameTitle = driver.FindElement(By.CssSelector("a[data-name='nickname']"));
-            nameTitle.Click(); 
+            nameTitle.Click();
+            
             var nameInput = driver.FindElement(By.CssSelector("div.editable-input > input"));
             nameInput.Clear();
             nameInput.SendKeys(expectedName);
+
             driver.FindElement(By.CssSelector(".btn-sm.editable-submit")).Click();
+
             var expectedPopup = driver.FindElement(By.CssSelector(".gritter-without-image"));
             var name = nameTitle.Text;
 
