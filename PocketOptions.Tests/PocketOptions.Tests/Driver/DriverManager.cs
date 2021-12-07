@@ -14,6 +14,7 @@ namespace PocketOptions.Tests.Driver
                 var options = new ChromeOptions();
                 options.AddArguments(@"user-data-dir=c:\Users\yegor\AppData\Local\Google\Chrome\User Data\");
                 _driver = new ChromeDriver(Directory.GetCurrentDirectory(), options);
+                //_driver.Manage().Window.Maximize();
             }
 
             return _driver;

@@ -8,14 +8,14 @@ namespace PocketOptions.Tests.Utils
     [SetUpFixture]
     public abstract class CommonConditions
     {
-        protected IWebDriver driver;
+        protected IWebDriver Driver;
 
         [SetUp]
         public void InitBrowserAndLogin()
         {
-            driver = DriverSingleton.GetWebDriver();
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-            driver.Navigate().GoToUrl("https://pocketoption.com/ru/cabinet/demo-quick-high-low/");
+            Driver = DriverSingleton.GetWebDriver();
+            Driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            Driver.Navigate().GoToUrl("https://pocketoption.com/ru/cabinet/demo-quick-high-low/");
         }
 
         [TearDown]
