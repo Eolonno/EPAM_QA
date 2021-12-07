@@ -6,13 +6,14 @@ namespace PocketOptions.Tests.Pages
 {
     public class PendingTradePF : PageFactoryBase
     {
-        [FindsBy(How = How.CssSelector, Using = "button[data-id='field-symbol']")]
+        //[FindsBy(How = How.CssSelector, Using = "button[data-id='field-symbol']")]
+        [FindsBy(How = How.CssSelector, Using = "button[data-toggle='dropdown']")]
         private IWebElement _assetsButton;
 
-        [FindsBy(How = How.Name, Using = "open_time")]
+        [FindsBy(How = How.CssSelector, Using = ".date > input")]
         private IWebElement _openTimeInput;
 
-        [FindsBy(How = How.Name, Using = "amount")]
+        [FindsBy(How = How.XPath, Using = "//input[@value=1]")]
         private IWebElement _amountOfBet;
 
         [FindsBy(How = How.XPath, Using = "//form/div[4]/div[2]/a")]

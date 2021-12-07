@@ -15,6 +15,7 @@ namespace PocketOptions.Tests.Utils
         {
             Driver = DriverSingleton.GetWebDriver();
             Driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            Driver.Manage().Window.Maximize();
             Driver.Navigate().GoToUrl("https://pocketoption.com/ru/cabinet/demo-quick-high-low/");
         }
 

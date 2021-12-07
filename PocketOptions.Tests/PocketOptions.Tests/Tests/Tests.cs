@@ -29,6 +29,7 @@ namespace PocketOptions.Tests
         {
             var numberOfAssets = 3;
             var amountOfBet = 1;
+
             var expressOrders = new PocketOptionMainPF(Driver)
                 .OpenExpressOrderMenu()
                 .PutOnTheFirstAssets(numberOfAssets)
@@ -62,9 +63,9 @@ namespace PocketOptions.Tests
         {
             var amountOfBet = 1;
 
-            var openedBets = new PocketOptionMainPF(Driver)
+            var openedBets = new BetMenuPF(Driver)
                 .EnterAmountOfBet(amountOfBet)
-                .CreateBet()
+                .CreateCallBet()
                 .GetOpenedBets();
 
             openedBets.Should().NotBeNullOrEmpty();
@@ -114,6 +115,34 @@ namespace PocketOptions.Tests
             drawingsCounter.Should().NotBeNull();
         }
 
+        [Test]
+        public void PocketOption_SendMessageToGeneralChat()
+        {
+            var messageToSend = "Hello guys!";
 
+            var errorPopup = new PocketOptionMainPF(Driver)
+                .OpenChatMenu()
+                .OpenGeneralChat()
+                .TypeMessage(messageToSend)
+                .SendMessage()
+                .GetErrorPopup();
+
+            errorPopup.Should().NotBeNull();
+        }
+
+        [Test]
+        public void PocketOption_SimultaneousIncreaseAndDecreaseBet()
+        {
+            var betAmount = 1;
+            var expectedBetsCount = 2;
+
+            var betsCollection = new BetMenuPF(Driver)
+                .EnterAmountOfBet(betAmount)
+                .CreateCallBet()
+                .CreatePutBet()
+                .GetOpenedBets();
+
+            betsCollection.Count.Should().Be(expectedBetsCount);
+        }
     }
 }
