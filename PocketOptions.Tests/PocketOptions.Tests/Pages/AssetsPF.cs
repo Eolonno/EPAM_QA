@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using OpenQA.Selenium;
+using PocketOptions.Tests.Utils;
 
 namespace PocketOptions.Tests.Pages
 {

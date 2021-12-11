@@ -13,6 +13,7 @@ namespace PocketOptions.Tests.Utils
         [SetUp]
         public void InitBrowserAndLogin()
         {
+            Log.Info($"Start test: {TestContext.CurrentContext.Test.MethodName}");
             Driver = DriverSingleton.GetWebDriver();
             Driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
             Driver.Manage().Window.Maximize();
@@ -22,6 +23,7 @@ namespace PocketOptions.Tests.Utils
         [TearDown]
         public void CloseBrowser()
         {
+            Log.Info($"Close test: {TestContext.CurrentContext.Test.MethodName}");
             DriverSingleton.CloseWebDriver();
         }
     }

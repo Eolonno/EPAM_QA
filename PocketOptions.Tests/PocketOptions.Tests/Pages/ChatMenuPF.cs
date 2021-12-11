@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿using PocketOptions.Tests.Utils;
 using OpenQA.Selenium;
 using SeleniumExtras.PageObjects;
 

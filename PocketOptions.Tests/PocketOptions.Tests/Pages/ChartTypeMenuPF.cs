@@ -1,5 +1,6 @@
 ﻿using OpenQA.Selenium;
 using SeleniumExtras.PageObjects;
+using PocketOptions.Tests.Utils;
 
 namespace PocketOptions.Tests.Pages
 {
